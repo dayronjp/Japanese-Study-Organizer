@@ -15,7 +15,7 @@ This is a personal project created to help organize my Japanese studies, especia
 </p> 
 
 ## How to Use
-You can access the project through the following link: [Live Demo on Netlify](https://your-netlify-link-here.netlify.app) <!-- Replace with your actual Netlify link -->
+You can access the project through the following link: [Live Demo on Netlify](https://japanese-study-organizer.netlify.app/) <!-- Replace with your actual Netlify link -->
 
 ## Demonstration
 The activities for each day can be selected in a calendar, and a timer with a progress bar is initiated for every study session.
