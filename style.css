@@ -1,0 +1,118 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Noto Serif JP', serif;
+    background-color: #fef8e8; /* Cor creme suave */
+    color: #2c2c2c;
+    line-height: 1.8;
+    padding: 20px;
+}
+
+/* Container principal */
+.container {
+    max-inline-size: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    border: 2px solid #d7ccc8; /* Tons inspirados em papel artesanal */
+}
+
+/* Título principal */
+h1 {
+    font-size: 2rem;
+    text-align: center;
+    color: #d32f2f; /* Vermelho japonês tradicional */
+    margin-block-end: 20px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+/* Estilo dos dias */
+.day {
+    margin-block-end: 30px;
+}
+
+.day h2 {
+    font-size: 1.5rem;
+    color: #1976d2; /* Azul-marinho elegante */
+    margin-block-end: 10px;
+    border-block-end: 2px solid #1976d2;
+    display: inline-block;
+    padding-block-end: 5px;
+}
+
+/* Atividades */
+.activity {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
+    margin-block-end: 10px;
+    background-color: #fef3e3; /* Tom de pergaminho claro */
+    border-inline-start: 5px solid #d32f2f; /* Vermelho marcante */
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.activity:hover {
+    background-color: #fbe9e7; /* Tons suaves no hover */
+}
+
+/* Texto da atividade */
+.activity span {
+    flex: 1;
+    font-size: 1rem;
+}
+
+/* Botão do temporizador */
+.timer-button {
+    background-color: #1976d2;
+    color: #fff;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    font-family: 'Noto Serif JP', serif;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.timer-button:hover {
+    background-color: #0d47a1;
+    transform: translateY(-2px);
+}
+
+.timer-button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+/* Container do calendário */
+.calendar-container {
+    text-align: center;
+    margin-block-end: 20px;
+}
+
+.calendar-container input {
+    font-size: 1rem;
+    padding: 10px;
+    border: 1px solid #1976d2;
+    border-radius: 4px;
+    inline-size: 200px;
+    text-align: center;
+    background-color: #fff;
+}
+
+.calendar-container label {
+    font-size: 1.2rem;
+    color: #d32f2f;
+    margin-inline-end: 10px;
+    font-weight: bold;
+}

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>勉強スケジュール</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pikaday/css/pikaday.css">
+</head>
+<body>
+
+    <div class="calendar-container">
+        <label for="calendar">日付を選ぶ:</label>
+        <input type="text" id="calendar" placeholder="日付を選択">
+    </div>
+    
+    <div class="container">
+        <h1>N4勉強スケジュール</h1>
+
+        <div class="day">
+            <h2>月曜日</h2>
+            <div class="activity">
+                <span>20分: 文法（文法構造を2つ勉強する）</span>
+                <button class="timer-button" data-time="20">開始</button>
+            </div>
+            <div class="activity">
+                <span>5分: 休憩</span>
+                <button class="timer-button" data-time="5">開始</button>
+            </div>
+            <div class="activity">
+                <span>20分: 語彙（新しい単語を10個覚える）</span>
+                <button class="timer-button" data-time="20">開始</button>
+            </div>
+            <div class="activity">
+                <span>5分: 休憩</span>
+                <button class="timer-button" data-time="5">開始</button>
+            </div>
+            <div class="activity">
+                <span>20分: 漢字（新しい漢字を5個勉強する）</span>
+                <button class="timer-button" data-time="20">開始</button>
+            </div>
+            <div class="activity">
+                <span>5分: 休憩</span>
+                <button class="timer-button" data-time="5">開始</button>
+            </div>
+            <div class="activity">
+                <span>20分: 関西弁（表現を学び、標準語と比較する）</span>
+                <button class="timer-button" data-time="20">開始</button>
+            </div>
+        </div>
+
+        <div class="day">
+            <h2>火曜日</h2>
+            <div class="activity">
+                <span>30分: 文法（月曜日の文法構造を復習し、新しい構造を2つ勉強する）</span>
+                <button class="timer-button" data-time="30">開始</button>
+            </div>
+            <div class="activity">
+                <span>5分: 休憩</span>
+                <button class="timer-button" data-time="5">開始</button>
+            </div>
+            <div class="activity">
+                <span>30分: 語彙（覚えた単語を復習し、新しい単語を10個覚える）</span>
+                <button class="timer-button" data-time="30">開始</button>
+            </div>
+            <div class="activity">
+                <span>5分: 休憩</span>
+                <button class="timer-button" data-time="5">開始</button>
+            </div>
+            <div class="activity">
+                <span>20分: 漢字（前回の漢字を復習し、新しい漢字を5個勉強する）</span>
+                <button class="timer-button" data-time="20">開始</button>
+            </div>
+        </div>
+
+        <div class="day">
+            <h2>水曜日</h2>
+            <div class="activity">
+                <span>30分: 文法（今週勉強した文法を全て練習する）</span>
+                <button class="timer-button" data-time="30">開始</button>
+            </div>
+            <div class="activity">
+                <span>5分: 休憩</span>
+                <button class="timer-button" data-time="5">開始</button>
+            </div>
+            <div class="activity">
+                <span>30分: 語彙（覚えた単語を練習問題や文章で定着させる）</span>
+                <button class="timer-button" data-time="30">開始</button>
+            </div>
+            <div class="activity">
+                <span>5分: 休憩</span>
+                <button class="timer-button" data-time="5">開始</button>
+            </div>
+            <div class="activity">
+                <span>20分: 漢字（学んだ漢字を含む簡単な文章を読む）</span>
+                <button class="timer-button" data-time="20">開始</button>
+            </div>
+        </div>
+
+        <div class="day">
+            <h2>木曜日</h2>
+            <div class="activity">
+                <span>20分: 文法（新しい文法構造を2つ勉強する）</span>
+                <button class="timer-button" data-time="20">開始</button>
+            </div>
+            <div class="activity">
+                <span>5分: 休憩</span>
+                <button class="timer-button" data-time="5">開始</button>
+            </div>
+            <div class="activity">
+                <span>20分: 語彙（新しい単語を10個覚える）</span>
+                <button class="timer-button" data-time="20">開始</button>
+            </div>
+            <div class="activity">
+                <span>5分: 休憩</span>
+                <button class="timer-button" data-time="5">開始</button>
+            </div>
+            <div class="activity">
+                <span>20分: 漢字（新しい漢字を5個勉強する）</span>
+                <button class="timer-button" data-time="20">開始</button>
+            </div>
+            <div class="activity">
+                <span>5分: 休憩</span>
+                <button class="timer-button" data-time="5">開始</button>
+            </div>
+            <div class="activity">
+                <span>20分: 関西弁（フレーズを練習し、関西弁の会話を聞く）</span>
+                <button class="timer-button" data-time="20">開始</button>
+            </div>
+        </div>
+
+        <div class="day">
+            <h2>金曜日</h2>
+            <div class="activity">
+                <span>40分: 総復習（文法、語彙、漢字を全て復習する）</span>
+                <button class="timer-button" data-time="40">開始</button>
+            </div>
+            <div class="activity">
+                <span>5分: 休憩</span>
+                <button class="timer-button" data-time="5">開始</button>
+            </div>
+            <div class="activity">
+                <span>20分: 模擬試験（JLPT N4の問題を解く）</span>
+                <button class="timer-button" data-time="20">開始</button>
+            </div>
+            <div class="activity">
+                <span>5分: 休憩</span>
+                <button class="timer-button" data-time="5">開始</button>
+            </div>
+            <div class="activity">
+                <span>20分: 追加練習（今週の内容を使った読解、聴解、または作文）</span>
+                <button class="timer-button" data-time="20">開始</button>
+            </div>
+        </div>
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/moment/moment.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/pikaday/pikaday.js"></script>
+    <script src="scripts.js"></script>
+
+</body>
+</html>
